@@ -12,8 +12,8 @@ public class Main {
         HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("https://api.github.com/repos/abhi-up79/LearningGithubActions/dispatches"))
 				.header("Accept", "application/vnd.github.everest-preview+json")
-				.header("Authorization", "Bearer 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")
-                .POST(HttpRequest.BodyPublishers.ofString("{\"event_type\": \"do-something\"}"))
+				.header("Authorization", "Bearer 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")
+                		.POST(HttpRequest.BodyPublishers.ofString("{\"event_type\": \"do-something\", \"client_payload\": {\"text\": \"Call from Java code\"}}"))
 				.build();
         HttpResponse<String> response = null;
         try {
