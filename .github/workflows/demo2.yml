@@ -1,6 +1,7 @@
 name: api call
 on:
-  repository_dispatch
+  repository_dispatch:
+    types: do-something
 jobs:
   my-job:
     runs-on: ubuntu-latest
